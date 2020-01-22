@@ -67,16 +67,8 @@
   const compareId = (a, b) => a.id - b.id;
   const compareHue = (a, b) => a.hue - b.hue;
   const compareHueDesc = (a, b) => b.hue - a.hue;
-  function compareName(a, b) {
-    if (a.name < b.name) return -1;
-    if (a.name > b.name) return 1;
-    return 0;
-  }
-  function compareNameDesc(a, b) {
-    if (a.name < b.name) return 1;
-    if (a.name > b.name) return -1;
-    return 0;
-  }
+  const compareName = (a, b) => a.name.localeCompare(b.name);
+  const compareNameDesc = (a, b) => b.name.localeCompare(a.name);
   // Handle the name sort toggler
   function sortByName() {
     if (sort === "name") {
