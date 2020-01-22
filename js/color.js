@@ -26,7 +26,7 @@
   } else {
     // Otherwise, redirect because something's wrong with the URL
     // Be specific when testing on the file system
-    const url = window.location.protocol === "file:" ? "./index.html" : "/";
+    const url = window.location.protocol === "file:" ? "./index.html" : "./";
     window.location.replace(url);
   }
 })();

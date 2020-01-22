@@ -16,7 +16,7 @@
     // Add the new color to the Store
     Store.addColor(color);
     // Navigate back to the list
-    const url = window.location.protocol === "file:" ? "./index.html" : "/";
+    const url = window.location.protocol === "file:" ? "./index.html" : "./";
     window.location.href = url;
   }
   // Assign the handler to the submit event
