@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Color App</title>
+    <link rel="stylesheet" href="css/normalize.slim.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/button.css" />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <header>
+          <h1>Create</h1>
+        </header>
+        <form id="form">
+          <label>
+            Name
+            <input
+              type="text"
+              id="name"
+              placeholder="Name"
+              required
+              autofocus
+            />
+          </label>
+          <label>
+            Hue
+            <input
+              id="hue"
+              type="number"
+              placeholder="0"
+              min="0"
+              max="359"
+              step="1"
+              required
+            />
+          </label>
+          <button type="submit" class="submit">Create new color</button>
+        </form>
+      </section>
+    </main>
+    <script src="js/generator.js"></script>
+    <script src="js/store.js"></script>
+    <script src="js/create.js"></script>
+  </body>
+</html>
